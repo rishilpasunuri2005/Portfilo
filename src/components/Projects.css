@@ -1,0 +1,103 @@
+.projects__heading {
+  font-size: clamp(32px, 4.6vw, 56px);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  max-width: 760px;
+  margin-bottom: 64px;
+}
+
+.projects__list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.project {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 32px;
+  padding: 36px;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  transition: transform var(--transition), border-color var(--transition);
+}
+
+.project:hover {
+  transform: translateY(-4px);
+  border-color: var(--fg);
+}
+
+.project__meta {
+  display: flex;
+  align-items: flex-start;
+}
+
+.project__year {
+  font-size: 13px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--fg-muted);
+}
+
+.project__title {
+  font-size: clamp(28px, 3.4vw, 40px);
+  line-height: 1.05;
+  margin-bottom: 16px;
+}
+
+.project__tagline {
+  font-size: 16px;
+  color: var(--fg-muted);
+  margin-bottom: 22px;
+  max-width: 680px;
+}
+
+.project__points {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.project__points li {
+  font-size: 14.5px;
+  color: var(--fg-muted);
+  padding-left: 18px;
+  position: relative;
+  line-height: 1.6;
+}
+
+.project__points li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 6px;
+  height: 1px;
+  background: var(--fg-muted);
+}
+
+.project__stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chip {
+  font-size: 12px;
+  padding: 6px 12px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--fg-muted);
+  background: var(--bg);
+}
+
+@media (max-width: 720px) {
+  .project {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 24px;
+  }
+}

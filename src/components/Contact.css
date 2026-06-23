@@ -1,0 +1,55 @@
+.contact {
+  padding: 120px 0;
+}
+
+.contact__inner {
+  max-width: 880px;
+}
+
+.contact__eyebrow {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--fg-muted);
+  margin-bottom: 28px;
+}
+
+.contact__heading {
+  font-size: clamp(36px, 5.6vw, 72px);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  margin-bottom: 24px;
+}
+
+.contact__sub {
+  font-size: 17px;
+  color: var(--fg-muted);
+  margin-bottom: 36px;
+  max-width: 560px;
+}
+
+.contact__email {
+  font-size: clamp(28px, 4vw, 44px);
+  display: inline-block;
+  border-bottom: 1px solid var(--fg);
+  padding-bottom: 4px;
+  transition: opacity 0.25s ease, transform 0.4s ease;
+}
+
+.contact__email:hover {
+  opacity: 0.7;
+  transform: translateX(6px);
+}
+
+.contact__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 36px;
+  font-size: 14px;
+  color: var(--fg-muted);
+}
+
+.contact__links a:hover {
+  color: var(--fg);
+}

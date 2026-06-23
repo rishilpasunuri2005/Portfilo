@@ -1,0 +1,124 @@
+.hero {
+  padding: 160px 0 100px;
+  border-top: none;
+}
+
+.hero__inner {
+  max-width: 880px;
+}
+
+.hero__status {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 14px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  font-size: 13px;
+  color: var(--fg-muted);
+  margin-bottom: 32px;
+}
+
+.hero__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #2ecc71;
+  box-shadow: 0 0 0 4px rgba(46, 204, 113, 0.18);
+  animation: pulse 2.4s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.55; }
+}
+
+.hero__title {
+  font-size: clamp(40px, 7vw, 84px);
+  line-height: 1.02;
+  letter-spacing: -0.025em;
+  margin-bottom: 28px;
+}
+
+.hero__sub {
+  font-size: clamp(16px, 1.6vw, 19px);
+  color: var(--fg-muted);
+  max-width: 620px;
+  margin-bottom: 40px;
+}
+
+.hero__cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 64px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 22px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  transition: transform 0.4s var(--transition), background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+  border: 1px solid transparent;
+}
+
+.btn--primary {
+  background: var(--fg);
+  color: var(--bg);
+}
+
+.btn--primary:hover {
+  transform: translateY(-2px);
+}
+
+.btn--ghost {
+  border-color: var(--border);
+  color: var(--fg);
+}
+
+.btn--ghost:hover {
+  background: var(--bg-elevated);
+  transform: translateY(-2px);
+}
+
+.hero__meta {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  padding-top: 28px;
+  border-top: 1px solid var(--border);
+}
+
+.hero__meta > div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.hero__meta-label {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--fg-subtle);
+}
+
+.hero__meta-value {
+  font-size: 15px;
+  color: var(--fg);
+}
+
+@media (max-width: 720px) {
+  .hero {
+    padding: 130px 0 60px;
+  }
+  .hero__meta {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
