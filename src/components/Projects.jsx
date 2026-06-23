@@ -14,7 +14,7 @@ const projects = [
     stack: ['Python', 'FastAPI', 'LangGraph', 'Next.js', 'PostgreSQL', 'Docker'],
   },
   {
-    year: '2024',
+    year: '2025',
     title: 'Retinal Vessel Segmentation',
     tagline:
       'Deep learning diagnostic-aid tool for retinal vessel segmentation on the DRIVE and STARE benchmark datasets, reaching ~0.82 Dice and ~0.70 IoU.',
