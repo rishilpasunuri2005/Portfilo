@@ -2,7 +2,7 @@ import './Projects.css'
 
 const projects = [
   {
-    year: '2025',
+    year: '2026',
     title: 'OmniRoute AI',
     tagline:
       'Production-ready, security-first AI SaaS platform that dynamically routes prompts across Groq, OpenRouter, and NVIDIA NIM by task type and complexity — for ~10x cost savings over single-model routing.',
